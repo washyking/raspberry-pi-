@@ -11,8 +11,8 @@ light_pin = 17  # Replace with the GPIO pin connected to the light
 
 mailgun_smtp_hostname = "smtp.mailgun.org"
 mailgun_smtp_port = 587
-mailgun_smtp_username = "postmaster@sandbox529d90819aa1491b997c8ab9ad6635d6.mailgun.org"
-mailgun_smtp_password = "a6db42fd94fd01b5df2a0058c7d80b59-07ec2ba2-0db4edc9"
+mailgun_smtp_username = "postmaster@.mailgun.org"
+mailgun_smtp_password = "password"#Input account password
 email_sender = "postmaster@sandbox529d90819aa1491b997c8ab9ad6635d6.mailgun.org"
 email_recipient = "maiblefive201@gmail.com"  # Replace with the recipient's email address
 

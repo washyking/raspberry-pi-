@@ -1,0 +1,22 @@
+// This #include statement was automatically added by the Particle IDE.
+#include <ThingSpeak.h>
+
+#include <Particle.h>
+
+TCPClient client;
+
+unsigned long myChannelNumber = 2161248;    // change this to your channel number
+const char * myWriteAPIKey = "8S44LJ4A5L8FBBQ4"; // change this to your channels write API key
+
+void setup() {
+ThingSpeak.begin(client);
+}
+
+void loop() {
+// read the input on analog pin 0:
+int sensorValue = analogRead(A0);
+
+// Write to ThingSpeak, field 1, immediately
+ThingSpeak.writeField(myChannelNumber, 1, sensorValue, myWriteAPIKey);
+delay(2000); // ThingSpeak will only accept updates every 2 seconds.
+}
